@@ -3,4 +3,5 @@ class AssetsManeger {
   static const String docLogoLowOpacity = 'assets/svg/doc_logo_low_opacity.svg';
   static const String onBoardingDoctore =
       'assets/images/onboarding_boctore.png';
+  static const String splash = 'assets/images/splash.png';
 }
