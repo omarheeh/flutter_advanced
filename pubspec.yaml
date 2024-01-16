@@ -35,6 +35,10 @@ dependencies:
   easy_localization: ^3.0.2
   #Native Splash
   flutter_native_splash: ^2.3.9
+  #Svg Printer
+  flutter_svg: ^2.0.9
+  #for adaption screen adn font size
+  flutter_screenutil: ^5.9.0
 
 dev_dependencies:
   flutter_test:
@@ -45,6 +49,7 @@ dev_dependencies:
 flutter:
   uses-material-design: true
 
-  # assets:
-  #   - images/a_dot_burr.jpeg
+  assets:
+    - assets/svg/
+    - assets/images/
   #   - images/a_dot_ham.jpeg
