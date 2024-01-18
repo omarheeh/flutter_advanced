@@ -1,3 +1,4 @@
+import 'package:doctormobile/features/login/ui/widgets/login_view_body.dart';
 import 'package:flutter/material.dart';
 
 class LoginView extends StatelessWidget {
@@ -5,13 +6,8 @@ class LoginView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Login View'),
-      ),
-      body: Center(
-        child: Text('login'),
-      ),
+    return const Scaffold(
+      body: LoginViewBody(),
     );
   }
 }
