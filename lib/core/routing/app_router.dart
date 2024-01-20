@@ -3,6 +3,8 @@ import 'package:doctormobile/features/home/ui/view/home_view.dart';
 import 'package:doctormobile/features/login/logic/cubit/login/login_cubit.dart';
 import 'package:doctormobile/features/login/ui/view/login_view.dart';
 import 'package:doctormobile/features/onboarding/onboarding_view.dart';
+import 'package:doctormobile/features/singup/logic/cubit/cubit/signup_cubit.dart';
+import 'package:doctormobile/features/singup/ui/view/signup_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:doctormobile/core/di/dependency_injection.dart' as di;
@@ -25,6 +27,13 @@ class AppRouter {
       case Routes.homeScreen:
         return MaterialPageRoute(
           builder: (_) => const HomeView(),
+        );
+      case Routes.signupScreen:
+        return MaterialPageRoute(
+          builder: (_) => BlocProvider(
+            create: (context) => di.getIt<SignupCubit>(),
+            child: SignupView(),
+          ),
         );
       default:
         return MaterialPageRoute(

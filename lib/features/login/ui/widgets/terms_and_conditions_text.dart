@@ -1,8 +1,8 @@
 import 'package:doctormobile/core/theming/styles.dart';
 import 'package:flutter/material.dart';
 
-class TermsAndConditionsText extends StatelessWidget {
-  const TermsAndConditionsText({super.key});
+class TeamsAndConditionsText extends StatelessWidget {
+  const TeamsAndConditionsText({super.key});
 
   @override
   Widget build(BuildContext context) {
