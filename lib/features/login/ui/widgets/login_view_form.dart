@@ -32,13 +32,6 @@ class _LoginViewFormState extends State<LoginViewForm> {
   }
 
   @override
-  void dispose() {
-    super.dispose();
-    emailController.dispose();
-    passwordController.dispose();
-  }
-
-  @override
   Widget build(BuildContext context) {
     return Form(
       key: BlocProvider.of<LoginCubit>(context).formKey,
@@ -108,5 +101,12 @@ class _LoginViewFormState extends State<LoginViewForm> {
       autovalidateMode = AutovalidateMode.always;
       setState(() {});
     }
+  }
+
+  @override
+  void dispose() {
+    emailController.dispose();
+    passwordController.dispose();
+    super.dispose();
   }
 }

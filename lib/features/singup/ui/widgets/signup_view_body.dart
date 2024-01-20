@@ -1,41 +1,39 @@
 import 'package:doctormobile/core/helpers/spacing.dart';
 import 'package:doctormobile/core/theming/styles.dart';
-import 'package:doctormobile/features/login/ui/widgets/dont_have_account.dart';
-import 'package:doctormobile/features/login/ui/widgets/lobin_bloc_listener.dart';
-import 'package:doctormobile/features/login/ui/widgets/login_view_form.dart';
 import 'package:doctormobile/features/login/ui/widgets/terms_and_conditions_text.dart';
+import 'package:doctormobile/features/singup/ui/widgets/alredy_have_account_text.dart';
+import 'package:doctormobile/features/singup/ui/widgets/sign_up_listener.dart';
+import 'package:doctormobile/features/singup/ui/widgets/signup_view_form.dart';
 import 'package:flutter/material.dart';
 
-class LoginViewBody extends StatelessWidget {
-  const LoginViewBody({
-    super.key,
-  });
+class SignupViewBody extends StatelessWidget {
+  const SignupViewBody({super.key});
 
   @override
   Widget build(BuildContext context) {
     return SafeArea(
       child: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 30),
+          padding: EdgeInsets.symmetric(horizontal: 30, vertical: 30),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                'Welcome Back',
+                'Create Account',
                 style: TextStyles.font24BlueBold,
               ),
               horizontalSpacint(8),
               Text(
-                "We're excited to have you back, can't wait to see what you've been up to since you last logged in.",
+                "Sign up now and start exploring all that our app has to offer. We're excited to welcome you to our community!",
                 style: TextStyles.font14GreyRegular,
               ),
               verticalSpacint(36),
-              const LoginViewForm(),
+              const SignupViewForm(),
               verticalSpacint(16),
               const TeamsAndConditionsText(),
               verticalSpacint(60),
-              const DontHaveAccount(),
-              const LoginBlocListener(),
+              const AlredyHaveAccountText(),
+              const SignupBlocListener(),
             ],
           ),
         ),
