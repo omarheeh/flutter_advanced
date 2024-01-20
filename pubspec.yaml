@@ -23,6 +23,7 @@ dependencies:
   get_it: ^7.6.6
   #Automatically generate code for converting to and from JSON by annotating Dart classes.
   json_serializable: ^6.7.1
+  build_runner: ^2.4.8
   #Annotation for the json__seriaalizable code-generator
   json_annotation: ^4.8.1
   #networking
